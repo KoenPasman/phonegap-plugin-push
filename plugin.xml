@@ -26,7 +26,6 @@
     </engines>
 
     <preference name="SENDER_ID" />
-    <preference name="GOOGLE_APP_ID" />
 
 	<!-- android -->
 	<platform name="android">
@@ -118,10 +117,6 @@
 
         <config-file target="*-Info.plist" parent="IS_GCM_ENABLED">
             <true/>
-        </config-file>
-
-        <config-file target="*-Info.plist" parent="GOOGLE_APP_ID">
-            <string>$GOOGLE_APP_ID</string>
         </config-file>
 
 		<source-file src="src/ios/AppDelegate+notification.m" />
